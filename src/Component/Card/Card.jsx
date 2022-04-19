@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
-const url = "https://imdb-api.com/en/API/Top250Movies/k_ite1xbap";
+const url = "https://imdb-api.com/en/API/Top250Movies/k_pbnbr85o";
 
 export default function Card({changeId}) {
   const [movies, setMovies] = useState([]);
