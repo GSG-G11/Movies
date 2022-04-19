@@ -1,11 +1,22 @@
-import { useEffect, useState, useContext }from 'react'
-import  {MoviesContext}  from "../../context/Movies";
+import { useState,useEffect }from 'react'
 
-export default function Card() {
-  const { movies } = useContext(MoviesContext);
+const url = "https://imdb-api.com/en/API/Top250Movies/k_f5cb9xe5"
+
+export default  function Card() {
+  const [movies, setMovies] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const response = await fetch(url);
+      const data = await response.json();
+      return setMovies(data.items);
+    };
+    fetchData();
+  }, []);
+
   return (
     <div>
-      {movies.map((item,index) => {        
+      { movies.map((item,index) => {        
         return  (
           <div key={index} >
             <img src={item.image} alt=""/>
