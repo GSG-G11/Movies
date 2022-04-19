@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 export default function Details({ id }) {
   const [movie, setMovie] = useState({});
   const [isLoading, setIsLoading] = useState(true);
-  const url = `https://imdb-api.com/en/API/Wikipedia/k_ml9g0xj7/${id}`;
+  const url = `https://imdb-api.com/en/API/Wikipedia/k_ite1xbap/${id}`;
 
   useEffect(() => {
     fetch(url)

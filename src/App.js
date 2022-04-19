@@ -5,7 +5,7 @@ import Card from './Component/Card/Card';
 import Details from './Component/Details/Details';
 
 function App() {
-  const [id, setId] = useState('tt0111161');
+  const [id, setId] = useState('');
 
   const changeId = (ids) => {
     setId(ids);
