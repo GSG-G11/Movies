@@ -1,0 +1,25 @@
+.header__images{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 0.5rem 2rem;
+}
+
+.header__image__cont{
+    width: 50%;
+}
+
+.header__image__cont img {
+    width: 100%;
+}
+.header__image__cont h4 {
+    text-align: start;
+    width: fit-content;
+    color: white;
+    cursor: pointer;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+.header__image__cont h4:hover {
+    color: grey;
+}

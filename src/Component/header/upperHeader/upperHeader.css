@@ -1,0 +1,40 @@
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+}
+
+.upper__header {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  padding: 0.5rem 4rem;
+}
+
+.nav__wrapper {
+  width: 40%;
+}
+.header__nav {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__nav li {
+  color: grey;
+  width: 4rem;
+  height: 2.5rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+}
+
+.header__nav li:hover {
+  color: white;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  background-color: #ff2900;
+}
