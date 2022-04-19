@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const url = "https://imdb-api.com/en/API/Top250Movies/k_inx1pjtk";
 
-export default function Card() {
+export default function Card({changeId}) {
   const [movies, setMovies] = useState([]);
 
   useEffect(() => {
