@@ -1,0 +1,32 @@
+.cards__container {
+  background-color: #111111;
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 4rem;
+  padding: 0.5rem;
+}
+.card {
+  background-color: #282c34;
+  color: white;
+  width: 25% !important;
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.009);
+  box-shadow: rgba(202, 202, 202, 0.1) 0px 20px 25px -5px,
+    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+.movie__title{
+    font-weight: bold;
+    text-align: start;
+}
+
+
+.movie__text{
+    text-align: start;
+    font-size: 0.8rem;
+}

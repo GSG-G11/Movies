@@ -11,6 +11,7 @@
 
 .header__image__cont img {
     width: 100%;
+    margin-bottom: 0.8rem;
 }
 .header__image__cont h4 {
     text-align: start;
