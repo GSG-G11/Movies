@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
-const url = "https://imdb-api.com/en/API/Top250Movies/k_pbnbr85o";
+const url = "https://imdb-api.com/en/API/Top250Movies/k_inx1pjtk";
 
 export default function Card({changeId}) {
   const [movies, setMovies] = useState([]);
@@ -27,7 +27,7 @@ export default function Card({changeId}) {
               <h2>{movie.title}</h2>
               <h2>{movie.year}</h2>
             <Link to="/details">
-              <button onClick={() => changeId(movie.id)}>Details</button>
+              <button onClick={() => changeId({id: movie.id , image: movie.image})}>Details</button>
             </Link>
             </div>
           ))}
