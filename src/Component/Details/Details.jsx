@@ -4,8 +4,8 @@ import { useState, useEffect } from "react";
 export default function Details({ id }) {
   const [movie, setMovie] = useState({});
   const [isLoading, setIsLoading] = useState(true);
-  const url = `https://imdb-api.com/en/API/Wikipedia/k_pbnbr85o/${id}`;
-
+  const url = `https://imdb-api.com/en/API/Wikipedia/k_inx1pjtk/${id.id}`;
+  
   useEffect(() => {
     fetch(url)
       .then((response) => response.json())

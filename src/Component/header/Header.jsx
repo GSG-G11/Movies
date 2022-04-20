@@ -2,11 +2,11 @@ import React from "react";
 
 import UpperHeader from "./upperHeader";
 import DownHeader from "./downHeader";
-const Header = () => {
+const Header = ({image , changeId }) => {
   return (
     <div className="whole__header">
-     <UpperHeader />
-     <DownHeader />
+     <UpperHeader changeId={changeId} />
+     <DownHeader image={image}/>
     </div>
   );
 };

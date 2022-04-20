@@ -2,11 +2,11 @@ import React from "react";
 import Logo from "./Logo";
 import Navigation from "./Navigation";
 import "./upperHeader.css"
-const UpperHeader = () => {
+const UpperHeader = ({changeId} ) => {
   return (
     <div className="upper__header">
       <Logo />
-      <Navigation />
+      <Navigation changeId ={changeId} />
     </div>
   );
 };

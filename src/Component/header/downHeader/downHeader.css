@@ -23,3 +23,15 @@
 .header__image__cont h4:hover {
     color: grey;
 }
+
+.image-div{
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem 2rem;
+    
+}
+
+.image{
+    height: 350px;
+    width: 200px;
+}
