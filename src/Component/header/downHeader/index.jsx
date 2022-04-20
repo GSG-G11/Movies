@@ -2,10 +2,10 @@ import React from "react";
 
 import FrontImages from "./FrontImages";
 import './downHeader.css'
-const Downheader = () => {
+const Downheader = ({image}) => {
   return (
     <div >
-      <FrontImages />
+      <FrontImages image={image}/>
     </div>
   );
 };
