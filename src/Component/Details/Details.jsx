@@ -1,5 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
+import './Details.css'
 
 export default function Details({ id }) {
   const [movie, setMovie] = useState({});
@@ -16,9 +17,11 @@ export default function Details({ id }) {
   return (
     <div>
       {isLoading ? (
-        <div>Loading...</div>
+        <div className="loading">Loading...</div>
       ) : (
-        <div>
+        
+        <div className="details">
+          <img src="" alt="" />
           <h1>{movie.title}</h1>
           <h2>{movie.year}</h2>
           <p>{movie.plotShort.plainText}</p>
