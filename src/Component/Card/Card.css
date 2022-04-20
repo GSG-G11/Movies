@@ -10,7 +10,7 @@
 .card {
   background-color: #282c34;
   color: white;
-  width: 25% !important;
+  width: 20% !important;
   transition: all 0.3s ease-in-out;
 }
 
@@ -20,13 +20,13 @@
     rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 }
 
-.movie__title{
-    font-weight: bold;
-    text-align: start;
+
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
-
-
-.movie__text{
-    text-align: start;
-    font-size: 0.8rem;
+.card-text h2{
+    font-size: 0.8rem !important;
 }
