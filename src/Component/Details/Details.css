@@ -1,0 +1,18 @@
+.details,
+.loading {
+  color: white;
+  background-color: #121212;
+ text-align: start;
+ font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
+  padding: 3rem;
+}
+
+.details h1 ,h2 {
+    margin-bottom: 0.5;
+}
+
+.details p {
+    font-size: 1.1rem;
+}
+
