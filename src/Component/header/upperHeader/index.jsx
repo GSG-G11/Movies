@@ -5,7 +5,7 @@ import "./upperHeader.css"
 const UpperHeader = ({changeId} ) => {
   return (
     <div className="upper__header">
-      <Logo />
+      <Logo changeId ={changeId} />
       <Navigation changeId ={changeId} />
     </div>
   );
